@@ -4,103 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <title>Insure landing page</title>
   </head>
   <body>
-    <nav>
-      Insure
-      <ul>
-        <li>How we work</li>
-        <li>Blog</li>
-        <li>Account</li>
-        <button>View plans</button>
-      </ul>
+    <nav id="navigation-bar">
+      <div class="container">
+        <img src="./images/logo.svg" alt="insure logo" id="logo" />
+        <ul id="nav-links">
+          <li>How we work</li>
+          <li>Blog</li>
+          <li>Account</li>
+          <button>View plans</button>
+        </ul>
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
     </nav>
     <main>
-      <section>
-        <h1>Humanizing your insurance</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima velit, quis,
-          error aliquam cum iusto ipsa rem in sequi repellat eos? Possimus assumenda ipsum
-          perspiciatis blanditiis cum dolorum animi rerum?
-        </p>
-        <button>View plans</button>
+      <section id="hero">
+        <div class="container">
+          <img
+            id="hero-img"
+            src="./images/image-intro-desktop.jpg"
+            alt="family image"
+            srcset="./images/image-intro-mobile.jpg"
+          />
+          <div>
+            <h1>Humanizing your insurance.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima velit,
+              quis, error aliquam cum iusto ipsa rem in sequi repellat eos? Possimus
+              assumenda ipsum perspiciatis blanditiis cum dolorum animi rerum?Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <button>View plans</button>
+          </div>
+          <img
+            id="hero-img-2"
+            src="./images/image-intro-desktop.jpg"
+            alt="family image"
+          />
+        </div>
+        <img
+          src="./images//bg-pattern-intro-right-desktop.svg"
+          class="pattern"
+          id="p-1"
+        />
+        <img src="./images//bg-pattern-intro-left-desktop.svg" class="pattern" id="p-2" />
       </section>
-      <section>
-        <h1>We're differenct</h1>
+      <section id="services">
+        <div class="container">
+          <h1>We're differenct</h1>
+          <div>
+            <article>
+              <img src="./images/icon-snappy-process.svg" alt="" />
+              <h2>Snappy Process</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non
+                veritatis provident doloremque tempore praesentium
+              </p>
+            </article>
+            <article>
+              <img src="./images/icon-affordable-prices.svg" alt="" />
+              <h2>Affordable Prices</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non
+                veritatis provident doloremque tempore praesentium
+              </p>
+            </article>
 
-        <article>
-          <h2>Snappy Process</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non
-            veritatis provident doloremque tempore praesentium voluptatem corrupti et
-            necessitatibus, molestias accusantium in quibusdam. Eaque, laborum officiis?
-            Assumenda sit quod quidem.
-          </p>
-        </article>
-
-        <article>
-          <h2>Affordable Prices</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non
-            veritatis provident doloremque tempore praesentium voluptatem corrupti et
-            necessitatibus, molestias accusantium in quibusdam. Eaque, laborum officiis?
-            Assumenda sit quod quidem.
-          </p>
-        </article>
-
-        <article>
-          <h2>People First</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non
-            veritatis provident doloremque tempore praesentium voluptatem corrupti et
-            necessitatibus, molestias accusantium in quibusdam. Eaque, laborum officiis?
-            Assumenda sit quod quidem.
-          </p>
-        </article>
+            <article>
+              <img src="./images/icon-people-first.svg" alt="" />
+              <h2>People First</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non
+                veritatis provident doloremque tempore praesentium
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section>
-        <h1>Find out more about how we work</h1>
-        <button>how we work</button>
+        <div class="container">
+          <div id="more-info">
+            <h1>Find out more about how we work</h1>
+            <button>how we work</button>
+          </div>
+        </div>
       </section>
 
       <footer>
-        <h3>insure</h3>
-        <figure></figure>
-        <hr />
-        <ul>
-          <h4>Our company</h4>
-          <li>how we work</li>
-          <li>why insure?</li>
-          <li>check price</li>
-          <li>reviews</li>
-        </ul>
+        <div class="container">
+          <div id="footer-socials">
+            <img src="./images/logo.svg" alt="insure logo" id="logo" />
+            <figure>
+              <img src="./images/icon-facebook.svg" alt="insure logo" />
+              <img src="./images/icon-twitter.svg" alt="insure logo" />
+              <img src="./images/icon-pinterest.svg" alt="insure logo" />
+              <img src="./images/icon-instagram.svg" alt="insure logo" />
+            </figure>
+          </div>
 
-        <ul>
-          <h4>Help me</h4>
-          <li>how we work</li>
-          <li>why insure?</li>
-          <li>check price</li>
-          <li>reviews</li>
-        </ul>
+          <hr width="100%" />
+          <div id="footer-links">
+            <ul>
+              <h4>Our company</h4>
+              <li>how we work</li>
+              <li>why insure?</li>
+              <li>check price</li>
+              <li>reviews</li>
+            </ul>
 
-        <ul>
-          <h4>Contact</h4>
-          <li>how we work</li>
-          <li>why insure?</li>
-          <li>check price</li>
-          <li>reviews</li>
-        </ul>
+            <ul>
+              <h4>Help me</h4>
+              <li>how we work</li>
+              <li>why insure?</li>
+              <li>check price</li>
+              <li>reviews</li>
+            </ul>
 
-        <ul>
-          <h4>Others</h4>
-          <li>how we work</li>
-          <li>why insure?</li>
-          <li>check price</li>
-          <li>reviews</li>
-        </ul>
+            <ul>
+              <h4>Contact</h4>
+              <li>how we work</li>
+              <li>why insure?</li>
+              <li>check price</li>
+              <li>reviews</li>
+            </ul>
+
+            <ul>
+              <h4>Others</h4>
+              <li>how we work</li>
+              <li>why insure?</li>
+              <li>check price</li>
+              <li>reviews</li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </main>
   </body>
