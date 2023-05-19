@@ -30,6 +30,7 @@ nav {
   position: fixed;
   background-color: white;
   width: 100%;
+  max-width: 1900px;
   min-height: 2rem;
   box-sizing: border-box;
   height: fit-content;
@@ -91,13 +92,20 @@ button {
 
 section {
   position: relative;
-  padding: 20px;
+  padding: 30px 0;
+  width: 100%;
 }
 
 figure {
   display: flex;
   justify-content: center;
   gap: 15px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 article p,
@@ -170,33 +178,33 @@ footer li {
 }
 
 #services .container div {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
   gap: 10px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 nav ion-icon {
+  display: none;
+}
+#p-1-m {
   display: none;
 }
 
 #more-info {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
   color: white;
   width: 100%;
-  padding: 5rem;
   align-items: center;
   position: relative;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background-color: var(--prim-dark-violet);
-}
-
-#more-info {
   background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
   background-repeat: no-repeat;
   background-position: right;
+  padding: 3rem;
+  background-color: var(--prim-dark-violet);
 }
 
 #footer-socials {
@@ -255,6 +263,16 @@ footer .container {
   #hero-img-2 {
     display: none;
   }
+
+  #hero {
+    padding: 100px 0;
+    background-image: url('../images/bg-pattern-intro-left-mobile.svg');
+    background-repeat: no-repeat;
+  }
+  #p-1-m {
+    display: block;
+    right: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -268,6 +286,9 @@ footer .container {
 
   #more-info {
     aspect-ratio: 1/1;
+    padding: 10px;
+    justify-content: center;
+    background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
   }
 
   #navigation-bar ion-icon {
@@ -278,5 +299,20 @@ footer .container {
 
   .container {
     display: block;
+  }
+
+  footer {
+    background-image: url('../images/bg-pattern-footer-mobile.svg');
+  }
+
+  #footer-links,
+  #footer-socials {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1900px) {
+  body {
+    margin: 0px auto;
   }
 }
