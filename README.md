@@ -1,7 +1,3 @@
-Sure, here's a README file for your basic HTML and CSS insurance site:
-
----
-
 # Insurance Website
 
 This is a basic insurance website built using HTML and CSS. The purpose of this project is to practice responsive design techniques.
